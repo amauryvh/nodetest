@@ -1,0 +1,20 @@
+mkdir expressdemo
+cd expressdemo
+
+Now Initialize the package.json file by the following command.
+npm init
+
+Install express by the following command.
+npm install express --save
+
+If we do not want to restart the server manually every time, then we can use node package called nodemon. It resets the server every time we change the file.
+npm install nodemon --save-dev
+
+Change the package.json file and add the following line in “scripts” object.
+"scripts": {
+    "start": "nodemon server.js"
+},
+
+Ejecutar este comando y cada vez que se haga un cambio a server.js el solo reiniciara el servidor: npm start
+Tambien sirve ejecutar: npm run dev
+
