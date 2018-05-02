@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
 */
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/index.html')
-  // Note: __dirname is directory that contains the JavaScript source code. Try logging it and see what you get
+  // Note: __dirname is directory that contains the JavaScript source code. Try logging it and see what you get.
 })
 
 app.post('/quotes', (req, res) => {
